@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* ==============navbar=============== */
+
+.navbar {
+    height: 100px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 8px #0068e885;
+}
+
+.navbar .navbar-brand {
+    padding: 0;
+    height: 70px;
+    width: 175px;
+}
+
+.navbar .nav-item {
+    margin: 0 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+
+.navbar .nav-item .nav-link {
+    color: black;
+}
+
+.navbar .login_btn .nav-link {
+    color: #0069E8;
+}
+
+.navbar .login_btn {
+    height: 42px;
+    width: 100px;
+    border-radius: 21px;
+    text-align: center;
+    margin-left: 8px;
+    border: 1px solid #0069E8;
+}
+
+.navbar-collapse,
+.navbar-collapse .login_btn {
+    background-color: white;
+    text-align: center;
+    margin: auto;
+}
+
+
+/* ==============//navbar=============== */
+
+
+/* ======home section========= */
+
+#home {
+    max-height: 690px;
+    background-color: #015ECF;
+    text-align: center;
+}
+
+#home h2 {
+    margin: 169px 0 0;
+    font-size: 42px;
+    padding: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#home h4 {
+    margin: 0;
+    height: 31px;
+    font-size: 24px;
+    line-height: 24px;
+    position: relative;
+    color: #ffffff;
+    width: fit-content;
+}
+
+#home h4::after {
+    content: "";
+    position: absolute;
+    height: 110px;
+    width: 49px;
+    right: -80px;
+    top: 25px;
+    background-repeat: no-repeat;
+    background-image: url(../images/curve-arrow.png);
+}
+
+.hero_laptop {
+    position: relative;
+    width: 100%;
+    margin-top: 44px;
+    max-height: 466px;
+    max-width: 877px;
+    z-index: 1;
+}
+
+
+/* ======//home section========= */
+
+
+/* ======how help===== */
+
+#how_help {
+    margin-top: 171px;
+    text-align: center;
+}
+
+#how_help h2 {
+    font-size: 40px;
+    color: #1B2733;
+    font-weight: 600;
+    margin-bottom: 59px;
+}
+
+#how_help .col-md-2 {
+    width: 262px;
+    text-align: center;
+}
+
+#how_help h5 {
+    color: #1B2733;
+    font-size: 24px;
+    margin: 12px auto 9px;
+    line-height: 24px;
+    width: max-content;
+}
+
+#how_help .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 90px;
+    margin: 0 auto;
+    border: 1px solid #D8D8D8;
+    border-radius: 45px;
+}
+
+#how_help p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #5B6168;
+}
+
+.start_btn {
+    height: 50px;
+    width: 134px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 25px;
+    margin-top: 35px;
+    color: white;
+    background-color: #0069E8;
+}
+
+
+/* ======//how help===== */
+
+
+/* ==============info============= */
+
+#info {
+    margin-top: 120px;
+}
+
+#info .info_1,
+#info .info_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ECF2F6;
+}
+
+#info h3 {
+    font-size: 34px;
+    line-height: 24px;
+    font-weight: bold;
+    margin: 50px auto 15px;
+}
+
+#info p {
+    max-width: 452px;
+    text-align: center;
+    color: #5B6168;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#info button {
+    height: 50px;
+    width: 134px;
+    border-radius: 25px;
+    margin-top: 14px;
+    border: 1px solid #B5C2CB;
+}
+
+
+/* ==============//info============= */
+
+
+/* ================News And event=========== */
+
+#news h2 {
+    margin: 107px auto 40px;
+    font-size: 40px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+#news .middle_card {
+    margin: 0 31px;
+}
+
+#news .col-md-4 {
+    margin-top: 20px;
+    max-width: 359px;
+}
+
+#news .news_title {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 12px 0 5px;
+    color: #1B2733;
+}
+
+#news .news_date img {
+    margin-right: 8px;
+}
+
+#news .news_date {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    color: #1B2733;
+}
+
+#news p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: #5B6168;
+}
+
+#news .read_more {
+    margin-top: 5px;
+    color: #0069E8;
+}
+
+
+/* ================News And event=========== */
+
+
+/* ===============partners========== */
+
+#partners .col-sm-2 {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+#partners h2 {
+    font-size: 40px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin: 106px auto 43px;
+}
+
+
+/* ===============partners========== */
+
+
+/* =============footer========== */
+
+footer {
+    background-color: #F2F2F2;
+    margin-top: 100px;
+    padding-top: 26px;
+    padding-bottom: 30px;
+}
+
+footer .footer_bar {
+    display: flex;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8B919C;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer ul li {
+    margin-right: 20px;
+}
+
+footer .social img {
+    margin-right: 20px;
+}
+
+
+/* =============//footer========== */
+
+
+/* ===========responsive============= */
+
+@media (min-width:1400px) {
+    .navbar .container {
+        padding: 0;
+    }
+    .container {
+        max-width: 1140px;
+        padding: 0%;
+    }
+}
+
+@media (max-width:1200px) {
+    #info h3 {
+        font-size: 30px;
+        margin: 20px auto 15px;
+    }
+    #info p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:992px) {
+    .navbar .navbar-brand {
+        height: 50px;
+        width: 125px;
+    }
+    /* ---navbar-toogler---- */
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+    .toggler_icon {
+        height: 3px;
+        border-radius: 5px;
+        background-color: rgb(0, 0, 0);
+        display: block;
+    }
+    .top_bar {
+        transform: translateY(-8px);
+        width: 20px;
+        margin-left: 0px;
+    }
+    .middle_bar {
+        width: 40px;
+    }
+    .bottom_bar {
+        transform: translateY(8px);
+        width: 30px;
+        margin-left: 0px;
+    }
+    /* ---//navbar-toogler---- */
+    .login_btn {
+        margin: auto auto 15px auto;
+    }
+    #info h3 {
+        font-size: 28px;
+        margin: 15px auto 15px;
+    }
+    #info p {
+        font-size: 14px;
+    }
+    #info button {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:768px) {
+    #home {
+        max-height: 600px;
+    }
+    #home h4::after {
+        height: 67px;
+        background-size: cover;
+        width: 30px;
+        right: -40px;
+    }
+    #info button {
+        margin-bottom: 15px;
+    }
+    #how_help h2 {
+        font-size: 35px;
+    }
+    #news h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width:576px) {
+    #home {
+        max-height: 530px;
+    }
+    #home h4::after {
+        height: 67px;
+        background-size: cover;
+        width: 30px;
+        right: -15px;
+    }
+    #home h2 {
+        margin: 130px 0 0;
+        font-size: 32px;
+    }
+    #home h4 {
+        margin: 0;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:475px) {
+    #home h4::after {
+        height: 67px;
+        background-size: cover;
+        width: 30px;
+        right: 10px;
+    }
+}
