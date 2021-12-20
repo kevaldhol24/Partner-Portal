@@ -112,22 +112,22 @@
     <section id="info">
         <div class="container">
             <div class="row g-0 justify-content-center">
-                <div class="col-md-6 col-11">
+                <div class="col-md-6 col-11 img_block">
                     <img src="./images/association.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="col-md-6 col-11 info_1">
                     <h3>For Association</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus justo egestas arcu mattis placerat a sed nisl. Ut dolor libero, viverra non nisl id, volutpat lacinia massa.</p>
-                    <button class="btn">Read More</button>
+                    <button class="btn info_btn">Read More</button>
                 </div>
             </div>
             <div class="row g-0 justify-content-center">
-                <div class="col-md-6 col-11 info_2 order-2 order-md-1">
+                <div class="col-md-6 col-11 info_2  order-2 order-md-1">
                     <h3>For Sponsors/Partner</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus justo egestas arcu mattis placerat a sed nisl. Ut dolor libero, viverra non nisl id, volutpat lacinia massa.</p>
-                    <button class="btn">Read More</button>
+                    <button class="btn info_btn">Read More</button>
                 </div>
-                <div class="col-md-6 col-11 order-1 order-md-2">
+                <div class="col-md-6 col-11 order-1 img_block order-md-2">
                     <img src="./images/sponsor-partner.jpg" alt="" class="img-fluid">
                 </div>
             </div>
@@ -143,25 +143,31 @@
             <h2 class="text-center">News and Event</h2>
             <div class="row g-0 justify-content-center">
                 <div class="col-md-4">
-                    <img src="./images/news-1.jpg" alt="" class="img-fluid">
+                    <div class="img_block">
+                        <img src="./images/news-1.jpg" alt="" class="img-fluid">
+                    </div>
                     <h3 class="news_title">Lorem Ipsum is simply dummy text</h3>
                     <span class="news_date"><img src="./images/calender.svg" alt="">23 May 2018</span>
                     <p class="news_info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam lorem, congue pharetra enim a, consequat suscipit diam.</p>
-                    <div class="read_more">Read more →</div>
+                    <div class="read_more">Read more <span class="read_more_arrow">→</span></div>
                 </div>
                 <div class="col-md-4 middle_card">
-                    <img src="./images/news-2.jpg" alt="" class="img-fluid">
+                    <div class="img_block">
+                        <img src="./images/news-2.jpg" alt="" class="img-fluid">
+                    </div>
                     <h3 class="news_title">Lorem Ipsum is simply dummy text</h3>
                     <span class="news_date"><img src="./images/calender.svg" alt="">23 May 2018</span>
                     <p class="news_info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam lorem, congue pharetra enim a, consequat suscipit diam.</p>
-                    <div class="read_more">Read more →</div>
+                    <div class="read_more">Read more <span class="read_more_arrow">→</span></div>
                 </div>
                 <div class="col-md-4">
-                    <img src="./images/news-3.jpg" alt="" class="img-fluid">
+                    <div class="img_block">
+                        <img src="./images/news-3.jpg" alt="" class="img-fluid">
+                    </div>
                     <h3 class="news_title">Lorem Ipsum is simply dummy text</h3>
                     <span class="news_date"><img src="./images/calender.svg" alt="">23 May 2018</span>
                     <p class="news_info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam lorem, congue pharetra enim a, consequat suscipit diam.</p>
-                    <div class="read_more">Read more →</div>
+                    <div class="read_more">Read more <span class="read_more_arrow">→</span></div>
                 </div>
             </div>
         </div>
@@ -188,21 +194,25 @@
     <!-- ========footer========== -->
     <footer>
         <div class="container">
-            <div class="footer_bar">
-                <ul class="footer_nav">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Why Partner Portal</li>
-                    <li>Packages</li>
-                    <li>Contact Us</li>
-                </ul>
-                <p>© Copyright 2018 Partner Portal. All rights reserved.</p>
+            <div class="footer_bar row justify-content-between">
+                <div class="col-md-auto">
+                    <ul class="footer_nav">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Why Partner Portal</li>
+                        <li>Packages</li>
+                        <li>Contact Us</li>
+                    </ul>
+                    <div class="social">
+                        <img src="./images/facebook.svg" alt="">
+                        <img src="./images/twitter.svg" alt="">
+                        <img src="./images/linkedin.svg" alt="">
+                    </div>
+                </div>
+
+                <p class="col-md-auto">© Copyright 2018 Partner Portal. All rights reserved.</p>
             </div>
-            <div class="social">
-                <img src="./images/facebook.svg" alt="">
-                <img src="./images/twitter.svg" alt="">
-                <img src="./images/linkedin.svg" alt="">
-            </div>
+
         </div>
     </footer>
     <!-- ========//footer========== -->
@@ -210,6 +220,7 @@
 
     <!-- ======js file-========== -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
