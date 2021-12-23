@@ -3,36 +3,43 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
 
 /* ==============navbar=============== */
 
 .navbar {
     height: 100px;
     background-color: #ffffff;
-    box-shadow: 0px 2px 8px #0068e885;
+    box-shadow: 0px 2px 8px #72727285;
     transition: all 0.2s ease-in-out;
-}
-
-.navbar_scrolled {
-    height: 75px;
 }
 
 .navbar .navbar-brand {
     padding: 0;
     height: 70px;
     width: 175px;
-    transition: all 0.5s linear;
+    transition: all 0.2s linear;
 }
 
 .navbar .navbar-brand img {
-    transition: all 0.5s linear;
+    transition: all 0.2s linear;
 }
 
-.navbar_scrolled .navbar-brand img,
+.navbar_scrolled {
+    height: 75px;
+}
+
 .navbar_scrolled .navbar-brand {
     height: 50px;
-    width: auto;
-    transition: all 0.5s linear;
+    width: 125px;
 }
 
 .navbar .nav-item {
@@ -50,8 +57,6 @@ body {
 }
 
 .navbar .nav-item .nav-link:hover {
-    border: 1px solid #0069E8;
-    border-radius: 22px;
     color: #015ECF;
 }
 
@@ -65,7 +70,16 @@ body {
     border-radius: 21px;
     text-align: center;
     margin-left: 8px;
+    transition: all 0.2s linear;
     border: 1px solid #0069E8;
+}
+
+.navbar .login_btn:hover a {
+    color: #ffffff;
+}
+
+.navbar .login_btn:hover {
+    background-color: #0069E8;
 }
 
 .navbar-collapse,
@@ -73,7 +87,6 @@ body {
     background-color: white;
     text-align: center;
     margin: auto;
-    padding-bottom: 15px;
 }
 
 
@@ -154,7 +167,6 @@ body {
     font-size: 24px;
     margin: 12px auto 9px;
     line-height: 24px;
-    width: max-content;
 }
 
 #how_help .image {
@@ -205,6 +217,8 @@ body {
 #info .info_2 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 15px;
     align-items: center;
     background-color: #ECF2F6;
 }
@@ -213,7 +227,7 @@ body {
     font-size: 34px;
     line-height: 24px;
     font-weight: bold;
-    margin: 50px auto 15px;
+    margin: 0 auto 15px;
 }
 
 #info p {
@@ -238,8 +252,8 @@ body {
     overflow: hidden;
 }
 
-#info img,
-#news img {
+#info img {
+    object-fit: cover;
     transition: all 0.5s ease-in-out;
 }
 
@@ -266,13 +280,8 @@ body {
     font-weight: 600;
 }
 
-#news .middle_card {
-    margin: 0 31px;
-}
-
 #news .col-md-4 {
     margin-top: 20px;
-    max-width: 359px;
 }
 
 #news .news_title {
@@ -293,6 +302,10 @@ body {
     color: #1B2733;
 }
 
+#news img {
+    transition: all 0.5s ease-in-out;
+}
+
 #news p {
     margin: 0;
     font-size: 16px;
@@ -310,7 +323,7 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-#news .read_more:hover>.read_more_arrow {
+#news .read_more a:hover>.read_more_arrow {
     margin-left: 5px;
 }
 
@@ -333,6 +346,10 @@ body {
     font-weight: 600;
     text-align: center;
     margin: 106px auto 43px;
+}
+
+.partner_logo {
+    text-align: center;
 }
 
 
@@ -384,7 +401,7 @@ footer .social img {
 }
 
 footer .social img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 
@@ -395,11 +412,11 @@ footer .social img:hover {
 
 @media (min-width:1400px) {
     .navbar .container {
-        padding: 0;
+        /* padding: 0; */
     }
     .container {
         max-width: 1140px;
-        padding: 0%;
+        /* padding: 0%; */
     }
 }
 
@@ -414,6 +431,9 @@ footer .social img:hover {
 }
 
 @media (max-width:992px) {
+    .navbar {
+        height: auto;
+    }
     .navbar .navbar-brand {
         height: 50px;
         width: 125px;
@@ -446,8 +466,21 @@ footer .social img:hover {
         margin-left: 0px;
     }
     /* ---//navbar-toogler---- */
+    #home h4::after {
+        height: 67px;
+        background-size: cover;
+        width: 30px;
+        top: 40px;
+        right: -55px;
+    }
+    #how_help p {
+        margin: auto auto 40px;
+    }
+    #home {
+        height: 687px;
+    }
     .login_btn {
-        margin: auto auto 15px auto;
+        margin: auto auto 25px auto;
     }
     #info h3 {
         font-size: 28px;
@@ -458,8 +491,17 @@ footer .social img:hover {
     }
     #info button {
         margin-top: 0px;
+        height: 45px;
+        width: 130px;
+        font-size: 14px;
+    }
+    .partner_logo {
+        margin-bottom: 20px;
     }
     /* ----footer------ */
+    footer {
+        margin-top: 70px;
+    }
     footer .footer_bar {
         display: flex;
         text-align: center;
@@ -483,16 +525,36 @@ footer .social img:hover {
         height: 67px;
         background-size: cover;
         width: 30px;
-        right: -40px;
+        top: 40px;
+        right: 20px;
+    }
+    #how_help {
+        margin-top: 100px;
+    }
+    #how_help h2 {
+        margin-bottom: 40px;
     }
     #info button {
         margin-bottom: 15px;
+    }
+    #info .info_1 {
+        margin-bottom: 20px;
+    }
+    #how_help p {
+        max-width: 300px;
     }
     #how_help h2 {
         font-size: 35px;
     }
     #news h2 {
         font-size: 35px;
+    }
+    #news .col-md-4 {
+        margin-bottom: 25px;
+        max-width: 359px;
+    }
+    #partners h2 {
+        margin: 60px auto 40px;
     }
     footer .footer_nav {
         display: flex;
@@ -517,6 +579,9 @@ footer .social img:hover {
     #home h4 {
         margin: 0;
         font-size: 16px;
+    }
+    #home h4::after {
+        display: none;
     }
 }
 
